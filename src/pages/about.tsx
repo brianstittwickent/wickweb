@@ -5,25 +5,25 @@ import Image from 'next/image';
 const AboutPage: NextPage = () => {
   const teamMembers = [
     {
-      name: "Sarah Johnson",
+      name: "George Hill",
       title: "Director of Operations",
       summary: "Leading operational excellence with over 15 years of healthcare management experience.",
       image: "/images/placeholder-person.jpg"
     },
     {
-      name: "Michael Chen",
+      name: "Michael McKee",
       title: "Community Health Manager",
       summary: "Specializing in community outreach and health education program development.",
       image: "/images/placeholder-person.jpg"
     },
     {
-      name: "Dr. Emily Rodriguez",
+      name: "Dr. Malaika McKee-Culpepper",
       title: "Research Director",
       summary: "Driving evidence-based initiatives with expertise in public health research.",
       image: "/images/placeholder-person.jpg"
     },
     {
-      name: "James Wilson",
+      name: "Brian Stitt",
       title: "Technology Innovation Lead",
       summary: "Bridging healthcare and technology to create impactful digital solutions.",
       image: "/images/placeholder-person.jpg"
