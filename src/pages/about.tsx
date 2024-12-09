@@ -45,13 +45,15 @@ const About: NextPage = () => {
       <section className="mb-16">
         <div className="bg-white rounded-lg shadow-xl overflow-hidden">
           <div className="grid md:grid-cols-2">
-            <div className="relative h-[500px] overflow-hidden">
-              <Image
-                src="/images/thea-monet.jpg"
-                alt="Thea Monet"
-                fill
-                className="object-cover rounded-full"
-              />
+            <div className="flex items-center justify-center p-8">
+              <div className="relative w-[400px] h-[400px]">
+                <Image
+                  src="/images/thea-monet.jpg"
+                  alt="Thea Monet"
+                  fill
+                  className="object-cover rounded-full"
+                />
+              </div>
             </div>
             <div className="p-8">
               <h2 className="text-3xl font-bold mb-4">Thea Monet</h2>
