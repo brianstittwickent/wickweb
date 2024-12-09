@@ -45,7 +45,7 @@ const About: NextPage = () => {
       <section className="mb-16">
         <div className="bg-white rounded-lg shadow-xl overflow-hidden">
           <div className="grid md:grid-cols-2">
-            <div className="relative h-[500px]">
+            <div className="relative h-[500px] rounded-lg overflow-hidden">
               <Image
                 src="/images/thea-monet.jpg"
                 alt="Thea Monet"
@@ -98,7 +98,7 @@ const About: NextPage = () => {
           <div className="text-center">
             <div className="relative w-48 h-48 mx-auto mb-4">
               <Image
-                src="/images/placeholder-person.jpg"
+                src="/images/malaika-mckee-culpepper.jpg"
                 alt="Dr. Malaika McKee-Culpepper"
                 width={200}
                 height={200}
