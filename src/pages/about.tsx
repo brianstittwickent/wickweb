@@ -30,6 +30,33 @@ const AboutPage: NextPage = () => {
     }
   ];
 
+  const boardMembers = [
+    {
+      name: "Dr. James Thompson",
+      title: "Board Chair",
+      summary: "Former Dean of Public Health with 25+ years experience in community health initiatives.",
+      image: "/images/placeholder-person.jpg"
+    },
+    {
+      name: "Patricia Martinez",
+      title: "Vice Chair",
+      summary: "Healthcare policy expert and advocate for equitable health access.",
+      image: "/images/placeholder-person.jpg"
+    },
+    {
+      name: "Robert Chen, PhD",
+      title: "Secretary",
+      summary: "Leading researcher in public health interventions and community engagement.",
+      image: "/images/placeholder-person.jpg"
+    },
+    {
+      name: "Lisa Washington",
+      title: "Treasurer",
+      summary: "Financial executive with expertise in healthcare organization management.",
+      image: "/images/placeholder-person.jpg"
+    }
+  ];
+
   return (
     <Layout>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -122,6 +149,30 @@ const AboutPage: NextPage = () => {
           <h2 className="text-3xl font-bold text-wick-900 text-center mb-12">Our Leadership Team</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {teamMembers.map((member, index) => (
+              <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div className="relative h-64">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-wick-900 mb-2">{member.name}</h3>
+                  <h4 className="text-wick-600 font-medium mb-3">{member.title}</h4>
+                  <p className="text-wick-600 text-sm">{member.summary}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Board of Directors Section */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-wick-900 text-center mb-12">Board of Directors</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {boardMembers.map((member, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
                 <div className="relative h-64">
                   <Image
