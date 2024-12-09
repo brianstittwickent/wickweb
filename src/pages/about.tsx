@@ -45,28 +45,32 @@ const About: NextPage = () => {
       <section className="mb-16">
         <div className="bg-white rounded-lg shadow-xl overflow-hidden">
           <div className="grid md:grid-cols-2">
-            <div className="relative h-[500px] rounded-lg overflow-hidden">
+            <div className="relative h-[500px] overflow-hidden">
               <Image
                 src="/images/thea-monet.jpg"
                 alt="Thea Monet"
                 fill
-                className="object-cover"
+                className="object-cover rounded-full"
               />
             </div>
             <div className="p-8">
-              <h2 className="text-3xl font-bold text-wick-900 mb-2">Thea Monet</h2>
-              <h3 className="text-xl text-wick-600 mb-6">Executive Director</h3>
-              <div className="space-y-4 text-wick-600">
-                <p>
-                  Thea Monet brings over two decades of experience in healthcare management and community development to her role as Executive Director of Wick Enterprises. Her visionary leadership has been instrumental in transforming how healthcare services are delivered to underserved communities.
-                </p>
-                <p>
-                  Under her guidance, Wick Enterprises has pioneered innovative approaches to community health, combining traditional healthcare services with cutting-edge technology and community engagement strategies. Her focus on sustainable, accessible healthcare solutions has led to the development of numerous successful programs that continue to make a positive impact.
-                </p>
-                <p>
-                  Thea holds a Master's in Public Health and an MBA, bringing both healthcare expertise and business acumen to her role. She is frequently invited to speak at healthcare conferences and has been recognized with numerous awards for her contributions to community health initiatives.
-                </p>
-              </div>
+              <h2 className="text-3xl font-bold mb-4">Thea Monet</h2>
+              <h3 className="text-xl text-gray-600 mb-6">Executive Director</h3>
+              <p className="text-gray-700 mb-4">
+                Thea Monet brings over two decades of experience in public health and community development. 
+                As Executive Director of Wick Enterprises, she leads our mission to transform healthcare 
+                accessibility in underserved communities.
+              </p>
+              <p className="text-gray-700 mb-4">
+                With a Master's in Public Health from Johns Hopkins University and extensive field experience 
+                in both urban and rural healthcare settings, Thea has developed innovative programs that have 
+                significantly improved health outcomes in diverse communities across the country.
+              </p>
+              <p className="text-gray-700">
+                Her leadership has been instrumental in establishing partnerships with major healthcare 
+                providers, community organizations, and government agencies, creating sustainable solutions 
+                for healthcare delivery and community wellness.
+              </p>
             </div>
           </div>
         </div>
@@ -74,26 +78,8 @@ const About: NextPage = () => {
 
       {/* Leadership Team Section */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold text-wick-900 mb-8 text-center">Leadership Team</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Michael McKee */}
-          <div className="text-center">
-            <div className="relative w-48 h-48 mx-auto mb-4">
-              <Image
-                src="/images/michael-mckee.jpg"
-                alt="Michael McKee"
-                width={200}
-                height={200}
-                className="rounded-full object-cover"
-              />
-            </div>
-            <h3 className="text-xl font-semibold text-wick-900 mb-2">Michael McKee</h3>
-            <p className="text-wick-600 mb-4">Chief Executive Officer</p>
-            <Link href="/team/michael-mckee" className="inline-block bg-wick-600 text-white px-4 py-2 rounded hover:bg-wick-700 transition-colors">
-              Learn More
-            </Link>
-          </div>
-
+        <h2 className="text-3xl font-bold text-center mb-12">Our Leadership Team</h2>
+        <div className="grid md:grid-cols-2 gap-8">
           {/* Dr. Malaika McKee-Culpepper */}
           <div className="text-center">
             <div className="relative w-48 h-48 mx-auto mb-4">
@@ -105,47 +91,33 @@ const About: NextPage = () => {
                 className="rounded-full object-cover"
               />
             </div>
-            <h3 className="text-xl font-semibold text-wick-900 mb-2">Dr. Malaika McKee-Culpepper</h3>
-            <p className="text-wick-600 mb-4">Research Director</p>
-            <Link href="/team/malaika-mckee-culpepper" className="inline-block bg-wick-600 text-white px-4 py-2 rounded hover:bg-wick-700 transition-colors">
-              Learn More
-            </Link>
+            <h3 className="text-xl font-bold mb-2">Dr. Malaika McKee-Culpepper</h3>
+            <p className="text-gray-600 mb-2">Chief Medical Officer</p>
+            <p className="text-gray-700 px-4">
+              Dr. McKee-Culpepper is a distinguished physician with over 15 years of experience in community health. 
+              She oversees our medical programs and ensures the highest standards of healthcare delivery. Her expertise 
+              in preventive medicine and public health has been crucial in developing our innovative healthcare solutions.
+            </p>
           </div>
 
-          {/* George Hill */}
+          {/* Michael McKee */}
           <div className="text-center">
             <div className="relative w-48 h-48 mx-auto mb-4">
               <Image
-                src="/images/george-hill.jpg"
-                alt="George Hill"
+                src="/images/michael-mckee.jpg"
+                alt="Michael McKee"
                 width={200}
                 height={200}
                 className="rounded-full object-cover"
               />
             </div>
-            <h3 className="text-xl font-semibold text-wick-900 mb-2">George Hill</h3>
-            <p className="text-wick-600 mb-4">Director of Operations</p>
-            <Link href="/team/george-hill" className="inline-block bg-wick-600 text-white px-4 py-2 rounded hover:bg-wick-700 transition-colors">
-              Learn More
-            </Link>
-          </div>
-
-          {/* Brian Stitt */}
-          <div className="text-center">
-            <div className="relative w-48 h-48 mx-auto mb-4">
-              <Image
-                src="/images/brian-stitt.jpg"
-                alt="Brian Stitt"
-                width={200}
-                height={200}
-                className="rounded-full object-cover"
-              />
-            </div>
-            <h3 className="text-xl font-semibold text-wick-900 mb-2">Brian Stitt</h3>
-            <p className="text-wick-600 mb-4">Technology Innovation Lead</p>
-            <Link href="/team/brian-stitt" className="inline-block bg-wick-600 text-white px-4 py-2 rounded hover:bg-wick-700 transition-colors">
-              Learn More
-            </Link>
+            <h3 className="text-xl font-bold mb-2">Michael McKee</h3>
+            <p className="text-gray-600 mb-2">Chief Operations Officer</p>
+            <p className="text-gray-700 px-4">
+              Michael brings extensive operational expertise from his 20+ years in healthcare administration. 
+              He leads our operational strategies, ensuring efficient resource allocation and seamless program 
+              implementation. His focus on operational excellence has been key to scaling our impact across communities.
+            </p>
           </div>
         </div>
       </section>
