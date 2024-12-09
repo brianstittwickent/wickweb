@@ -43,7 +43,7 @@ const AboutPage: NextPage = () => {
           <div className="grid md:grid-cols-2">
             <div className="relative h-[500px]">
               <Image
-                src="/images/placeholder-person.jpg"
+                src="/images/thea-monet.jpg"
                 alt="Thea Monet"
                 fill
                 className="object-cover"
