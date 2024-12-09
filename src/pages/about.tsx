@@ -81,7 +81,7 @@ const About: NextPage = () => {
       {/* Leadership Team Section */}
       <section className="mb-16">
         <h2 className="text-3xl font-bold text-center mb-12">Our Leadership Team</h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Dr. Malaika McKee-Culpepper */}
           <div className="text-center">
             <div className="relative w-48 h-48 mx-auto mb-4">
@@ -119,6 +119,46 @@ const About: NextPage = () => {
               Michael brings extensive operational expertise from his 20+ years in healthcare administration. 
               He leads our operational strategies, ensuring efficient resource allocation and seamless program 
               implementation. His focus on operational excellence has been key to scaling our impact across communities.
+            </p>
+          </div>
+
+          {/* George Hill */}
+          <div className="text-center">
+            <div className="relative w-48 h-48 mx-auto mb-4">
+              <Image
+                src="/images/george-hill.jpg"
+                alt="George Hill"
+                width={200}
+                height={200}
+                className="rounded-full object-cover"
+              />
+            </div>
+            <h3 className="text-xl font-bold mb-2">George Hill</h3>
+            <p className="text-gray-600 mb-2">Director of Operations</p>
+            <p className="text-gray-700 px-4">
+              George brings a wealth of experience in healthcare operations and project management. His strategic 
+              approach to operational efficiency and process improvement has been instrumental in expanding our 
+              community health programs and ensuring their sustainable implementation.
+            </p>
+          </div>
+
+          {/* Brian Stitt */}
+          <div className="text-center">
+            <div className="relative w-48 h-48 mx-auto mb-4">
+              <Image
+                src="/images/brian-stitt.jpg"
+                alt="Brian Stitt"
+                width={200}
+                height={200}
+                className="rounded-full object-cover"
+              />
+            </div>
+            <h3 className="text-xl font-bold mb-2">Brian Stitt</h3>
+            <p className="text-gray-600 mb-2">Technology Innovation Lead</p>
+            <p className="text-gray-700 px-4">
+              Brian leads our technology initiatives with a focus on innovative solutions for healthcare delivery. 
+              His expertise in software development and digital health technologies has been crucial in developing 
+              our digital platforms and improving healthcare accessibility through technology.
             </p>
           </div>
         </div>
