@@ -1,32 +1,38 @@
 import { NextPage } from 'next';
 import Layout from '../components/Layout';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 const AboutPage: NextPage = () => {
+  const router = useRouter();
   const teamMembers = [
     {
       name: "George Hill",
       title: "Director of Operations",
       summary: "Leading operational excellence with over 15 years of healthcare management experience.",
-      image: "/images/george-hill.jpg"
+      image: "/images/george-hill.jpg",
+      profileUrl: "/team/george-hill"
     },
     {
       name: "Michael McKee",
       title: "Community Health Manager",
       summary: "Specializing in community outreach and health education program development.",
-      image: "/images/michael-mckee.jpg"
+      image: "/images/michael-mckee.jpg",
+      profileUrl: "/team/michael-mckee"
     },
     {
       name: "Dr. Malaika McKee-Culpepper",
       title: "Research Director",
       summary: "Driving evidence-based initiatives with expertise in public health research.",
-      image: "/images/placeholder-person.jpg"
+      image: "/images/placeholder-person.jpg",
+      profileUrl: "/team/malaika-mckee-culpepper"
     },
     {
       name: "Brian Stitt",
       title: "Technology Innovation Lead",
       summary: "Bridging healthcare and technology to create impactful digital solutions.",
-      image: "/images/brian-stitt.jpg"
+      image: "/images/brian-stitt.jpg",
+      profileUrl: "/team/brian-stitt"
     }
   ];
 
@@ -192,7 +198,7 @@ const AboutPage: NextPage = () => {
                   <p className="text-wick-600 text-sm mb-4">{member.summary}</p>
                   <button 
                     className="bg-wick-900 text-white px-4 py-2 rounded hover:bg-wick-800 transition-colors duration-200"
-                    onClick={() => alert(`More information about ${member.name} coming soon!`)}
+                    onClick={() => router.push(member.profileUrl)}
                   >
                     Learn More
                   </button>
