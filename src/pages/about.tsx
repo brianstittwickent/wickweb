@@ -181,8 +181,9 @@ const AboutPage: NextPage = () => {
                   <Image
                     src={member.image}
                     alt={member.name}
-                    fill
-                    className="object-cover"
+                    width={300}
+                    height={300}
+                    className="object-cover w-full h-full"
                   />
                 </div>
                 <div className="p-6">
@@ -205,8 +206,9 @@ const AboutPage: NextPage = () => {
                   <Image
                     src={member.image}
                     alt={member.name}
-                    fill
-                    className="object-cover"
+                    width={300}
+                    height={300}
+                    className="object-cover w-full h-full"
                   />
                 </div>
                 <div className="p-6">
@@ -229,8 +231,9 @@ const AboutPage: NextPage = () => {
                   <Image
                     src={member.image}
                     alt={member.name}
-                    fill
-                    className="object-cover"
+                    width={300}
+                    height={300}
+                    className="object-cover w-full h-full"
                   />
                 </div>
                 <div className="p-6">
