@@ -6,6 +6,10 @@ const GsapTest = dynamic(() => import('../components/GsapTest'), {
   ssr: false
 });
 
+const WickFireAnimation = dynamic(() => import('../components/WickFireAnimation'), {
+  ssr: false
+});
+
 const ComponentTesting: NextPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
@@ -14,11 +18,22 @@ const ComponentTesting: NextPage = () => {
           Component Testing Page
         </h1>
         
-        <div className="bg-white rounded-lg shadow-lg p-8">
-          <h2 className="text-2xl font-semibold text-wick-900 mb-6">
-            GSAP Animation Test
-          </h2>
-          <GsapTest />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-white rounded-lg shadow-lg p-8">
+            <h2 className="text-2xl font-semibold text-wick-900 mb-6">
+              GSAP Animation Test
+            </h2>
+            <GsapTest />
+          </div>
+
+          <div className="bg-white rounded-lg shadow-lg p-8">
+            <h2 className="text-2xl font-semibold text-wick-900 mb-6">
+              Wick Fire Animation
+            </h2>
+            <div className="flex justify-center">
+              <WickFireAnimation />
+            </div>
+          </div>
         </div>
       </div>
     </div>
