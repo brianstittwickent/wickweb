@@ -166,24 +166,22 @@ const About: NextPage = () => {
 
       {/* Board of Directors Section */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold text-wick-900 mb-8 text-center">Board of Directors</h2>
+        <h2 className="text-3xl font-bold text-center mb-12">Board of Directors</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {boardMembers.map((member, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="relative w-48 h-48 mx-auto mb-4">
+            <div key={index} className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
+              <div className="w-32 h-32 mb-6">
                 <Image
                   src={member.image}
                   alt={member.name}
-                  width={200}
-                  height={200}
-                  className="rounded-full object-contain p-4 bg-gray-100"
+                  width={128}
+                  height={128}
+                  className="rounded-full object-contain bg-gray-100 p-4"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-wick-900 mb-2">{member.name}</h3>
-                <h4 className="text-wick-600 font-medium mb-3">{member.title}</h4>
-                <p className="text-wick-600 text-sm">{member.summary}</p>
-              </div>
+              <h3 className="text-xl font-bold mb-2">{member.name}</h3>
+              <p className="text-gray-600 mb-4">{member.title}</p>
+              <p className="text-gray-700 text-center text-sm">{member.summary}</p>
             </div>
           ))}
         </div>
