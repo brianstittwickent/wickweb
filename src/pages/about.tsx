@@ -189,7 +189,13 @@ const AboutPage: NextPage = () => {
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-wick-900 mb-2">{member.name}</h3>
                   <h4 className="text-wick-600 font-medium mb-3">{member.title}</h4>
-                  <p className="text-wick-600 text-sm">{member.summary}</p>
+                  <p className="text-wick-600 text-sm mb-4">{member.summary}</p>
+                  <button 
+                    className="bg-wick-900 text-white px-4 py-2 rounded hover:bg-wick-800 transition-colors duration-200"
+                    onClick={() => alert(`More information about ${member.name} coming soon!`)}
+                  >
+                    Learn More
+                  </button>
                 </div>
               </div>
             ))}
