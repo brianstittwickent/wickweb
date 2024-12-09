@@ -14,7 +14,7 @@ const AboutPage: NextPage = () => {
       name: "Michael McKee",
       title: "Community Health Manager",
       summary: "Specializing in community outreach and health education program development.",
-      image: "/images/placeholder-person.jpg"
+      image: "/images/michael-mckee.jpg"
     },
     {
       name: "Dr. Malaika McKee-Culpepper",
