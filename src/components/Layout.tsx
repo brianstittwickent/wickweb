@@ -44,6 +44,9 @@ const Layout: FC<LayoutProps> = ({ children, showNav = true }) => {
               <Link href="/contact" style={{ color: 'var(--wick-600)' }} className="hover:text-wick-900 transition-colors duration-200">
                 Contact
               </Link>
+              <Link href="/component-testing" style={{ color: 'var(--wick-600)' }} className="hover:text-wick-900 transition-colors duration-200">
+                X
+              </Link>
             </div>
           </nav>
         )}
