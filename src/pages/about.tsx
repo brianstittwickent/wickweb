@@ -8,7 +8,7 @@ const AboutPage: NextPage = () => {
       name: "George Hill",
       title: "Director of Operations",
       summary: "Leading operational excellence with over 15 years of healthcare management experience.",
-      image: "/images/george-hill.jpg"
+      image: "/images/george_hill.jpeg"
     },
     {
       name: "Michael McKee",
@@ -26,7 +26,7 @@ const AboutPage: NextPage = () => {
       name: "Brian Stitt",
       title: "Technology Innovation Lead",
       summary: "Bridging healthcare and technology to create impactful digital solutions.",
-      image: "/images/brian-stitt.jpg"
+      image: "/images/brian-stitt.jpeg"
     }
   ];
 
