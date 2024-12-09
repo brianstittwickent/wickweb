@@ -3,6 +3,33 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const About: NextPage = () => {
+  const boardMembers = [
+    {
+      name: "Dr. James Thompson",
+      title: "Board Chair",
+      summary: "Former Dean of Public Health with 25+ years experience in community health initiatives.",
+      image: "/images/placeholder-person.jpg"
+    },
+    {
+      name: "Patricia Martinez",
+      title: "Vice Chair",
+      summary: "Healthcare policy expert and advocate for equitable health access.",
+      image: "/images/placeholder-person.jpg"
+    },
+    {
+      name: "Robert Chen, PhD",
+      title: "Secretary",
+      summary: "Leading researcher in public health interventions and community engagement.",
+      image: "/images/placeholder-person.jpg"
+    },
+    {
+      name: "Lisa Washington",
+      title: "Treasurer",
+      summary: "Financial executive with expertise in healthcare organization management.",
+      image: "/images/placeholder-person.jpg"
+    }
+  ];
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Mission Section */}
@@ -12,6 +39,37 @@ const About: NextPage = () => {
           At Wick Enterprises, we are dedicated to revolutionizing community health through innovative solutions and technology.
           Our mission is to create accessible, sustainable healthcare services that empower communities and improve lives.
         </p>
+      </section>
+
+      {/* Executive Director Section */}
+      <section className="mb-16">
+        <div className="bg-white rounded-lg shadow-xl overflow-hidden">
+          <div className="grid md:grid-cols-2">
+            <div className="relative h-[500px]">
+              <Image
+                src="/images/thea-monet.jpg"
+                alt="Thea Monet"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="p-8">
+              <h2 className="text-3xl font-bold text-wick-900 mb-2">Thea Monet</h2>
+              <h3 className="text-xl text-wick-600 mb-6">Executive Director</h3>
+              <div className="space-y-4 text-wick-600">
+                <p>
+                  Thea Monet brings over two decades of experience in healthcare management and community development to her role as Executive Director of Wick Enterprises. Her visionary leadership has been instrumental in transforming how healthcare services are delivered to underserved communities.
+                </p>
+                <p>
+                  Under her guidance, Wick Enterprises has pioneered innovative approaches to community health, combining traditional healthcare services with cutting-edge technology and community engagement strategies. Her focus on sustainable, accessible healthcare solutions has led to the development of numerous successful programs that continue to make a positive impact.
+                </p>
+                <p>
+                  Thea holds a Master's in Public Health and an MBA, bringing both healthcare expertise and business acumen to her role. She is frequently invited to speak at healthcare conferences and has been recognized with numerous awards for her contributions to community health initiatives.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Leadership Team Section */}
@@ -89,6 +147,30 @@ const About: NextPage = () => {
               Learn More
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Board of Directors Section */}
+      <section className="mb-16">
+        <h2 className="text-3xl font-bold text-wick-900 mb-8 text-center">Board of Directors</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {boardMembers.map((member, index) => (
+            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="relative h-64">
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-wick-900 mb-2">{member.name}</h3>
+                <h4 className="text-wick-600 font-medium mb-3">{member.title}</h4>
+                <p className="text-wick-600 text-sm">{member.summary}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 

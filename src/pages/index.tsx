@@ -1,48 +1,43 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
+
+// Use dynamic import to avoid SSR issues with GSAP
+const WickFireAnimation = dynamic(() => import('../components/WickFireAnimation'), {
+  ssr: false
+});
 
 export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-b from-wick-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <div className="text-center">
-            <div className="relative w-32 h-32 mx-auto mb-8">
-              <Image
-                src="/images/wick-logo.svg"
-                alt="Wick Enterprises Logo"
-                fill
-                className="object-contain"
-              />
+      <section className="relative bg-gradient-to-b from-wick-900 to-wick-800 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                Fueling Community Health Innovation
+              </h1>
+              <p className="text-lg md:text-xl mb-8 text-gray-200">
+                We're revolutionizing healthcare access through innovative technology and community-driven solutions.
+              </p>
+              <div className="space-x-4">
+                <Link href="/contact" className="inline-block bg-white text-wick-900 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors duration-300">
+                  Get Started
+                </Link>
+                <Link href="/about" className="inline-block border-2 border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-wick-900 transition-colors duration-300">
+                  Learn More
+                </Link>
+              </div>
             </div>
-            <h1 className="text-5xl font-bold mb-6">
-              <span className="text-wick-900">Fueling</span> the{' '}
-              <span className="text-red-600">Flames</span> for{' '}
-              <span className="text-wick-800">Health</span>
-            </h1>
-            <p className="text-xl text-wick-600 mb-12 max-w-3xl mx-auto">
-              At Wick Enterprises, we ignite community wellness through engagement, 
-              innovation, and collaboration. Together, we can build healthier, 
-              stronger communities.
-            </p>
-            <div className="flex justify-center space-x-6">
-              <Link
-                href="/services"
-                className="bg-wick-900 text-white px-8 py-3 rounded-md hover:bg-wick-800 transition-colors duration-300 shadow-lg hover:shadow-xl"
-              >
-                Our Services
-              </Link>
-              <Link
-                href="/contact"
-                className="bg-white text-wick-900 px-8 py-3 rounded-md border-2 border-wick-900 hover:bg-wick-50 transition-colors duration-300 shadow-lg hover:shadow-xl"
-              >
-                Get in Touch
-              </Link>
+            <div className="flex justify-center items-center">
+              <div className="transform scale-150">
+                <WickFireAnimation />
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Features Section */}
       <div className="py-24 bg-white">
