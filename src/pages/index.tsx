@@ -18,7 +18,7 @@ export default function Home() {
             </div>
             <h1 className="text-5xl font-bold mb-6">
               <span className="text-wick-900">Fueling</span> the{' '}
-              <span className="text-accent-600">Flames</span> of{' '}
+              <span className="text-accent-600">Flames</span> for{' '}
               <span className="text-wick-800">Health</span>
             </h1>
             <p className="text-xl text-wick-600 mb-12 max-w-3xl mx-auto">
