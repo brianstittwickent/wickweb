@@ -94,7 +94,7 @@ const About: NextPage = () => {
               />
             </div>
             <h3 className="text-xl font-bold mb-2">Dr. Malaika McKee-Culpepper</h3>
-            <p className="text-gray-600 mb-2">Chief Medical Officer</p>
+            <p className="text-gray-600 mb-2">Director of Community Research</p>
             <p className="text-gray-700 px-4">
               Dr. McKee-Culpepper is a distinguished physician with over 15 years of experience in community health. 
               She oversees our medical programs and ensures the highest standards of healthcare delivery. Her expertise 
@@ -114,7 +114,7 @@ const About: NextPage = () => {
               />
             </div>
             <h3 className="text-xl font-bold mb-2">Michael McKee</h3>
-            <p className="text-gray-600 mb-2">Chief Operations Officer</p>
+            <p className="text-gray-600 mb-2">Director of Healthcare Engagement</p>
             <p className="text-gray-700 px-4">
               Michael brings extensive operational expertise from his 20+ years in healthcare administration. 
               He leads our operational strategies, ensuring efficient resource allocation and seamless program 
@@ -154,7 +154,7 @@ const About: NextPage = () => {
               />
             </div>
             <h3 className="text-xl font-bold mb-2">Brian Stitt</h3>
-            <p className="text-gray-600 mb-2">Technology Innovation Lead</p>
+            <p className="text-gray-600 mb-2">Director of Technology</p>
             <p className="text-gray-700 px-4">
               Brian leads our technology initiatives with a focus on innovative solutions for healthcare delivery. 
               His expertise in software development and digital health technologies has been crucial in developing 
